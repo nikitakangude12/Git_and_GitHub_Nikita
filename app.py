@@ -59,6 +59,22 @@ def home():
 
     return render_template("index.html")
 
+# Task 3: To-Do Backend
+@app.route("/submittodoitem", methods=["POST"])
+def submit_todo_item():
+
+    item_name = request.form["itemName"]
+    item_description = request.form["itemDescription"]
+
+    todo_item = {
+        "itemName": item_name,
+        "itemDescription": item_description
+    }
+
+    collection.insert_one(todo_item)
+
+    return redirect(url_for("success"))
+
 
 # Success page
 @app.route("/success")
