@@ -5,6 +5,14 @@
     },
     {
         "name": "Nikita",
+        "course": "Cloud Computing"
+    },
+    {
+        "name": "Nikita",
+        "course": "DevOps"
+    },
+    {
+        "name": "Nikita",
         "course": "AI and Machine Learning"
     }
-]     
+]         
